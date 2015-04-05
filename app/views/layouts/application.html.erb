@@ -10,13 +10,10 @@
 <body>
 <!-- Navigation -->
 <%= render 'layouts/header' %>
-<!-- Flash Message -->
-<% flash.each do |name, msg| %>
-     <%= content_tag(:div, msg, class: "alert alert-#{name}") %>
-<% end %>
 
 <!--Content Body -->
 <div class="container">
+	<%= render partial: 'layouts/flash_messages', flash: flash %>
 	<%= yield %>
 </div>
 

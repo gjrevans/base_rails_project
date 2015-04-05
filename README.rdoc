@@ -1,1 +1,5 @@
-Weiner!
+This is a base rails project with the following.
+- Devise
+- Basic user model
+- Bootstrap
+- Root home page
